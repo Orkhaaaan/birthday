@@ -1,0 +1,95 @@
+.overlay-card {
+  transform: scale(0.9);
+  animation: introScale 0.45s ease forwards;
+}
+
+@keyframes introScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.86);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.overlay.hidden .overlay-card {
+  animation: outroScale 0.35s ease forwards;
+}
+
+@keyframes outroScale {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.12);
+  }
+}
+    /* FUTBOL – KLUB BLOKU */
+    .club-section {
+      margin-top: 14px;
+      width: 100%;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .club-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    .club-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .club-card {
+      flex: 1;
+      min-width: 150px;
+      background: rgba(15,23,42,0.96);
+      border-radius: 14px;
+      padding: 8px 10px;
+      border: 1px solid var(--border-subtle);
+      font-size: 11px;
+      color: #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .club-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .club-logo {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+    }
+
+    .club-name {
+      font-weight: 600;
+      font-size: 11px;
+    }
+
+    .club-note {
+      font-size: 10px;
+      color: #9ca3af;
+    }
+
+    .club-lineup {
+      font-size: 10px;
+      color: #cbd5f5;
+    }
